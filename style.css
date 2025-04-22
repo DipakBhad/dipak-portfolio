@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F7F7;
+    color: #333333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color:linear-gradient(135deg, #6a11cb, #2575fc); /* Coral Red for a warm look */
+    color: #fff;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: headerBackground 3s ease infinite alternate;
+    text-align: center;
+  }
+  
+  header img.profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  header p {
+    font-size: 18px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #FF6F61; /* Coral Red highlight on hover */
+  }
+  
+  /* Section Titles */
+  h2 {
+    font-size: 28px;
+    color: #1A73E8; /* Blue for headings */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* About Me Section */
+  #about {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color for skills */
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  
+  .skills-list li:hover {
+    background-color: #FF6F61; /* Hover effect with Coral Red */
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    color: #1A73E8;
+  }
+  
+  .project p {
+    font-size: 18px;
+  }
+  
+  .project a {
+    color: #FF6F61;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .project a:hover {
+    color: #4CAF50; /* Green color on hover */
+  }
+  
+  /* Resume Section */
+  .resume-container {
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume-text {
+    font-size: 18px;
+    color: #333;
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-btn {
+    background-color: #FF6F61;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #1A73E8;
+  }
+  
+  
+  /* Contact Section */
+  #contact {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #contact a {
+    color: #1A73E8;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #contact a:hover {
+    color: #FF6F61; /* Coral Red on hover */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  /* Scroll to Top Button */
+  #scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6F61; /* Coral Red button */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  #scroll-top-btn:hover {
+    opacity: 1;
+    background-color: #1A73E8; /* Blue hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 28px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  }
+  #scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  #scroll-top-btn:hover {
+    opacity: 1;
+  }
+  
